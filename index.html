@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Studnet Name: Gunjan Chaudhary     Studnet Id: 000831804
+I acknowledge that all the work has soleley been done by me and I have not copied or shared my file with annyone -->
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Random Restaurant</h1>
+    
+    <!-- The div that changes its statements according to the activity on the page using jQuery -->
+    <h2 class="location" id="loc"> Finding you location...</h2>                
+    <!-- Displays spinner over the screen and hides when the restaurants data is received -->
+    <div class="loader" id="spinner"></div>
+
+    <!-- list-unstyled is a media class used to add various media classes in it. using jQuery, each restaurant is added to this class as the data is looped over -->
+    <div class="list-unstyled"></div>
+</body>
+<style>
+    .loader {
+  border: 14px solid #f3f3f3; /* Light grey */
+  border-top: 14px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+    
+</html>
